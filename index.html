@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <button>Login</button>
+                <img src="./imgs/login.jpg" alt="">
+            </nav>
+        </header>
+        <aside>
+            <a href="#">Início</a>
+            <a href="#">Informações</a>
+        </aside>
+    </div>
+    <main>
+        <h1>Conversor anos-luz/km</h1>
+        <section>
+            <div class="cards">
+                <form>
+                    <label for="anos">Anos luz:</label>
+                    <input type="number" id="anos">
+                    <input type="submit" value="Converter" id="converterAnosLuz">
+                    <div class="result1"></div>
+                </form>
+            </div>
+
+            <div class="cards">
+                <form>
+                    <label for="kms">Kms:</label>
+                    <input type="number" id="kms">
+                    <input type="submit" value="Converter" id="converterKms">
+                    <div class="result2"></div>
+                </form>
+            </div>
+
+        </section>
+
+
+        <table class="tabela">
+            <thead>
+                <tr>
+                    <th>Data da medição</th>
+                    <th>Valor em Km</th>
+                    <th>Valor em Anos-Luz</th>
+                </tr>
+            </thead>
+        </table>
+    </main>
+
+
+
+    <div id="overlay"></div>
+
+    <div id="errorPopup">
+        <p>O sistema só aceita valores maiores ou iguais a 1. </p>
+        <button onclick="closePopup()">Fechar</button>
+    </div>
+
+    
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
