@@ -38,7 +38,7 @@ function exibirResultado2(event) {
     const numero2 = document.querySelector('#kms').value;
     if (numero2 < 1) {
         showErrorPopup()
-        resultado1.innerHTML = ""
+        resultado2.innerHTML = ""
         tabela.innerHTML += "<tr><td>-</td><td>-</td><td>-</td></tr>"
 
     } else {
